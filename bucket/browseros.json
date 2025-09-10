@@ -1,0 +1,24 @@
+{
+    "version": "0.23.0",
+    "description": "BrowserOS is an open-source agentic web browser.",
+    "homepage": "https://browseros.com/",
+    "license": "AGPL-3.0",
+    "notes": "",
+    "architecture": {
+        "64bit": {
+            "url": "",
+            "hash": ""
+        },
+    },
+    "checkver": {
+        "github": "https://github.com/browseros-ai/BrowserOS",
+        "regex": "tag\/v([\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/browseros-ai/BrowserOS/releases/download/v$version/BrowserOS_v$version_x64_installer.zip"
+            },
+        },
+    }
+}
